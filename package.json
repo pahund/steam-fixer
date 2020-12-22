@@ -1,6 +1,6 @@
 {
   "name": "steam-fixer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Workaround for a bug in Steam that makes it possible to install games on external drives",
   "scripts": {
     "create-sym-links": "./create-sym-links.js",
