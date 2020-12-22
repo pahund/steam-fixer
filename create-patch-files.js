@@ -51,7 +51,7 @@ if (existsSync(patchSteamDirPath)) {
 
 mkdirSync(patchSteamDirPath);
 
-exec(`rsync -avh --prune-empty-dirs --include='*/' --include='*.'{txt,xml} --exclude='*' "${sourceSteamDirPath}/" "${patchSteamDirPath}"`, (error, stdout, stderr) => {
+exec(`rsync -avh --prune-empty-dirs --include='*/' --include='*.'{txt,xml} --exclude='*' "${sourceSteamDirPath}" "${patchSteamDirPath}"`, (error, stdout, stderr) => {
   if (error) {
     console.error(error.message);
     process.exit(1)
