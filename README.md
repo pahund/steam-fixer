@@ -1,6 +1,7 @@
 # Steam Fixer
 
-**Workaround for a bug in Steam that makes it possible to install games on external drives**
+**Workaround for a bug in Steam that makes it possible to install games on
+external drives**
 
 Steam has a bug that makes it impossible to install a Mac game on an external
 drive. I'm not sure if this is actually a problem of Steam, or if my virus
@@ -49,7 +50,15 @@ Steam installs games, both on your internal and external drive.
 
 In Steam, install the game on the Mac's internal drive.
 
-In a terminal, run the command to create patch files:
+In a terminal, run the command to list the games currently installed on the
+internal drive – the names listed will be used as argument for the next command:
+
+```
+npm run list-games
+```
+
+Next, create patch files, providing the name of the game you want to move as
+`-n` argument, and a shortened arbitrary version of the name as `-s` argument:
 
 ```
 npm run create-patch-files -- -s SHORT_NAME -n LONG_NAME

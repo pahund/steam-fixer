@@ -1,10 +1,11 @@
 {
   "name": "steam-fixer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Workaround for a bug in Steam that makes it possible to install games on external drives",
   "scripts": {
     "create-sym-links": "./create-sym-links.js",
-    "create-patch-files": "./create-patch-files.js"
+    "create-patch-files": "./create-patch-files.js",
+    "list-games": "./list-games.js"
   },
   "author": "Patrick Hund",
   "license": "MIT",
